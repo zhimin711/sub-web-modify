@@ -487,6 +487,10 @@ export default {
             label: "通用",
             options: [
               {
+                label: "mzm",
+                value: "https://gist.githubusercontent.com/zhimin711/78373724d47a4018ec18f8166a234cf5/raw/GeneralClashRule.ini"
+              },
+              {
                 label: "默认",
                 value: "https://raw.githubusercontent.com/Meilieage/webcdn/main/rule/Area_Media_NoAuto.ini"
               },
@@ -932,7 +936,7 @@ export default {
     this.isPC = this.$getOS().isPc;
   },
   mounted() {
-    this.tanchuang();
+    // this.tanchuang();
     this.form.clientType = "clash";
     this.getBackendVersion();
     this.anhei();
